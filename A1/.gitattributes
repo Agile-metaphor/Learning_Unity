@@ -1,0 +1,34 @@
+# Unity-specific files to treat as text and merge using Unity's Smart Merge tool
+*.unity      merge=unityyamlmerge eol=lf
+*.prefab     merge=unityyamlmerge eol=lf
+*.asset      merge=unityyamlmerge eol=lf
+*.mat        merge=unityyamlmerge eol=lf
+*.anim       merge=unityyamlmerge eol=lf
+*.controller merge=unityyamlmerge eol=lf
+*.meta       merge=unityyamlmerge eol=lf
+
+# Image files to be managed by Git LFS
+*.psd  filter=lfs diff=lfs merge=lfs -text
+*.png  filter=lfs diff=lfs merge=lfs -text
+*.jpg  filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.tga  filter=lfs diff=lfs merge=lfs -text
+*.gif  filter=lfs diff=lfs merge=lfs -text
+*.bmp  filter=lfs diff=lfs merge=lfs -text
+*.tiff filter=lfs diff=lfs merge=lfs -text
+
+# Audio files to be managed by Git LFS
+*.mp3  filter=lfs diff=lfs merge=lfs -text
+*.ogg  filter=lfs diff=lfs merge=lfs -text
+*.wav  filter=lfs diff=lfs merge=lfs -text
+*.aiff filter=lfs diff=lfs merge=lfs -text
+
+# Video files to be managed by Git LFS
+*.mp4  filter=lfs diff=lfs merge=lfs -text
+*.mov  filter=lfs diff=lfs merge=lfs -text
+*.avi  filter=lfs diff=lfs merge=lfs -text
+
+# 3D model files to be managed by Git LFS
+*.fbx  filter=lfs diff=lfs merge=lfs -text
+*.obj  filter=lfs diff=lfs merge=lfs -text
+*.blend filter=lfs diff=lfs merge=lfs -text
