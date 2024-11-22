@@ -1,0 +1,54 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1678975767",
+        "python_version": "3.9.16 | packaged by conda-forge | (main, Feb  1 2023, 21:28:38) [MSC v.1929 64 bit (AMD64)]",
+        "command_line_arguments": "C:\\Users\\dades\\anaconda3\\envs\\tensorflowC\\Scripts\\mlagents-learn --resume",
+        "mlagents_version": "0.30.0",
+        "mlagents_envs_version": "0.30.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.13.1+cu117",
+        "numpy_version": "1.22.3",
+        "end_time_seconds": "1678975794"
+    },
+    "total": 26.690959,
+    "count": 1,
+    "self": 0.014248199999997269,
+    "children": {
+        "run_training.setup": {
+            "total": 0.08441300000000007,
+            "count": 1,
+            "self": 0.08441300000000007
+        },
+        "TrainerController.start_learning": {
+            "total": 26.5922978,
+            "count": 1,
+            "self": 0.00012529999999699726,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 24.2234371,
+                    "count": 1,
+                    "self": 24.2234371
+                },
+                "trainer_threads": {
+                    "total": 2.2000000008404186e-06,
+                    "count": 1,
+                    "self": 2.2000000008404186e-06
+                },
+                "TrainerController._save_models": {
+                    "total": 2.368733200000001,
+                    "count": 1,
+                    "self": 0.007694300000004262,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 2.361038899999997,
+                            "count": 1,
+                            "self": 2.361038899999997
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
